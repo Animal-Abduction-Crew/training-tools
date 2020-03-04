@@ -51,8 +51,12 @@ if device is "pc":
 # Networks
 networks = {}
 networks["256x192-3l"] = {"folder": "256-192-yolo-tiny-3l", "resolution": {"width": 256, "height": 192}, "weights": "256x192-yolo-tiny-3l_final.weights", "cfg": "256x192-yolo-tiny-3l.cfg"}
+networks["256x192-3l--oo"] = {"folder": "256x192-yolo-tiny-3l-only-original", "resolution": {"width": 256, "height": 192}, "weights": "256x192-yolo-tiny-3l-only-original_final.weights", "cfg": "256x192-yolo-tiny-3l-only-original.cfg"}
 networks["192x128-3l"] = {"folder": "192x128-yolo-tiny-3l", "resolution": {"width": 192, "height": 128}, "weights": "192x128-yolo-tiny-3l_final.weights", "cfg": "192x128-yolo-tiny-3l.cfg"}
-
+networks["192x128-3l-oo"] = {"folder": "192x128-yolo-tiny-3l-only-original", "resolution": {"width": 192, "height": 128}, "weights": "192x128-yolo-tiny-3l-only-original_final.weights", "cfg": "192x128-yolo-tiny-3l-only-original.cfg"}
+networks["192x128-t"] = {"folder": "192x128-yolo-tiny", "resolution": {"width": 192, "height": 128}, "weights": "yolov3-tiny_final.weights", "cfg": "yolov3-tiny.cfg"}
+networks["192x128-t-oo"] = {"folder": "192x128-yolo-tiny-only-original", "resolution": {"width": 192, "height": 128}, "weights": "192x128-yolo-tiny-only-original_final.weights", "cfg": "192x128-yolo-tiny-only-original.cfg"}
+networks["192x128"] = {"folder": "192x128-yolo", "resolution": {"width": 192, "height": 128}, "weights": "192x128-yolov3_final.weights", "cfg": "192x128-yolov3.cfg"}
 selectedNetwork = networks[args.network]
 #selectedNetwork = networks["128x96-9-v2"]
 
